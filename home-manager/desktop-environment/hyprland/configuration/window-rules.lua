@@ -54,14 +54,21 @@ hl.window_rule({
 
 hl.window_rule({
   match = {
-    class = "librewolf|obsidian";
+    class = "librewolf";
   },
   workspace = "2",
 })
 
 hl.window_rule({
   match = {
-    class = "org.telegram.desktop";
+    class = "obsidian";
   },
   workspace = "3",
+})
+
+hl.window_rule({
+  match = {
+    class = "org.telegram.desktop";
+  },
+  workspace = "4",
 })
