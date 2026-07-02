@@ -81,6 +81,7 @@
       local on_attach = function(client, bufnr)
           local opts = { buffer = bufnr, noremap = true, silent = true }
 
+          vim.keymap.set('n', '<leader>u', ':e<CR>')
           vim.keymap.set('n', 'K', vim.lsp.buf.signature_help, opts)
           vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
           vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
