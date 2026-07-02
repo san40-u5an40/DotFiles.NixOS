@@ -9,6 +9,7 @@
         ublock-origin
         proton-vpn
         a11ycss
+        translate-web-pages
       ];
     };
 

@@ -6,5 +6,6 @@
     ./git.nix
     ./librewolf.nix
     ./vscode.nix
+    ./yazi.nix
   ];
 }

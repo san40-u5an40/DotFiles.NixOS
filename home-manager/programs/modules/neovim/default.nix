@@ -14,14 +14,19 @@
       lua-language-server
       nil
       nixpkgs-fmt
+      ripgrep
     ];
     plugins = with pkgs.vimPlugins; [
       nvim-web-devicons
       vim-devicons
+      plenary-nvim
       lualine-nvim
-      fzf-lua
-      nvim-tree-lua
       smear-cursor-nvim
+      yazi-nvim
+
+      telescope-nvim
+      telescope-fzf-native-nvim
+      telescope-lsp-handlers-nvim
 
       roslyn-nvim
       luasnip
@@ -33,8 +38,6 @@
       nvim-dap-ui
       nvim-dap-virtual-text
       nvim-nio
-
-      plenary-nvim
     ];
     extraConfig = ''
       set encoding=utf8
@@ -64,23 +67,20 @@
     initLua = ''
       -- Модули из конфигурационной директории
       require('keymap')
+      require('plugins.cmp')
+      require('plugins.dap')
+      require('plugins.gitsigns')
+      require('plugins.lightbulb')
       require('plugins.lualine')
       require('plugins.luasnip')
-      require('plugins.gitsigns')
-      require('plugins.cmp')
-      require('plugins.fzf')
-      require('plugins.lightbulb')
-      require('plugins.dap')
-      require('plugins.tree')
       require('plugins.smear')
+      require('plugins.telescope')
+      require('plugins.yazi')
 
       -- LSP (т.к. в файлах сложнее интернировать путь до запуска LSP-сервера)
       local on_attach = function(client, bufnr)
           local opts = { buffer = bufnr, noremap = true, silent = true }
 
-          vim.keymap.set('n', 'gd', vim.lsp.buf.type_definition, opts)
-          vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
-          vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
           vim.keymap.set('n', 'K', vim.lsp.buf.signature_help, opts)
           vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
           vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)

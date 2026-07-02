@@ -27,7 +27,6 @@
     htop
     cmatrix
     tree
-    yazi
     eza
     tmux
     bc
