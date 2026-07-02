@@ -1,0 +1,20 @@
+{
+  imports = [
+    ./bluetooth.nix
+    ./boot.nix
+    ./graphics.nix
+    ./locale.nix
+    ./media.nix
+    ./net.nix
+    ./nix.nix
+    ./printing.nix
+    ./ssh.nix
+    ./timezone.nix
+    ./tuned.nix
+    ./upower.nix
+    ./usb.nix
+    ./user.nix
+    ./visual.nix
+    ./zram.nix
+  ];
+}

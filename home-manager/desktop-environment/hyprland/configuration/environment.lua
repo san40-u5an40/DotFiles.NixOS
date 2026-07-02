@@ -1,0 +1,6 @@
+hl.env("NIXOS_OZONE_WL", "1")
+hl.env("XDG_CURRENT_DESKTOP", "Hyprland")
+hl.env("XDG_SESSION_TYPE", "wayland")
+hl.env("XDG_SESSION_DESKTOP", "Hyprland")
+hl.env("QT_QPA_PLATFORM", "wayland")
+hl.env("GDK_BACKEND", "wayland")
