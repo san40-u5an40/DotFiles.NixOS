@@ -1,7 +1,7 @@
 #sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount ./disko.nix
 #sudo nixos-generate-config --root /mnt && sudo nixos-install
 #sudo nixos-rebuild switch --flake .#san40-u5an40-nixos
-#home-manager switch --flake .#
+#home-manager switch --flake .
 {
   disko.devices = {
     disk = {
