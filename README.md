@@ -1,6 +1,6 @@
 # DotFiles.NixOS
 
-![./screens/desktop-demo.jpg]
+![Desktop Screenshot](./screens/desktop-demo.jpg)
 
 ## Окружение рабочего стола
 |Категория|Реализация|
