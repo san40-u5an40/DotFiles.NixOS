@@ -12,6 +12,10 @@
       let
         nixPath = "~/.config/nix";
         externalDiskPath = "/media/veracrypt1";
+
+        vcKeyFile = "/media/DB/arch";
+        vcDataFile = "/media/32B7-92BD/data_5an40s";
+        vcMountPath = "/home/san40-u5an40/ExternalDisk";
       in
       {
         nixrbl = "sudo nixos-rebuild switch --flake ${nixPath}";
@@ -38,6 +42,9 @@
         dnp = "dotnet publish -r linux-x64 -c Release";
         dnnc = "dotnet nuget locals all --clear";
         dnnp = "dotnet pack --configuration Release --include-symbols --verbosity normal";
+
+        vm = "veracrypt -t -k ${vcKeyFile} ${vcDataFile} ${vcMountPath} --fs-options=\"iocharset=utf8\" --protect-hidden=no --pim=0";
+        vd = "veracrypt -t -d";
       };
 
     initContent = ''
