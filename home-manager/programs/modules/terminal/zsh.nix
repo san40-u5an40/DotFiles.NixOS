@@ -11,7 +11,9 @@
     shellAliases =
       let
         nixPath = "~/.config/nix";
-        externalDiskPath = "/media/veracrypt1";
+        externalDiskPath = "~/ExternalDisk";
+
+        dotNetVersion = "10.0";
 
         vcKeyFile = "/media/DB/arch";
         vcDataFile = "/media/32B7-92BD/data_5an40s";
@@ -30,10 +32,12 @@
         cdnix = "cd ${nixPath}";
         cdnixhm = "cd ${nixPath}/home-manager";
         cdnixos = "cd ${nixPath}/nixOs";
+        cdp = "cd ${externalDiskPath}/4_programming";
+        cded = "cd ${externalDiskPath}";
+        cddnp = "cd bin/Release/net${dotNetVersion}/linux-x64/publish";
 
         cfgzsh = "nvim ${nixPath}/home-manager/programs/modules/terminal/zsh.nix";
         cfggit = "nvim ${nixPath}/home-manager/programs/modules/git.nix";
-        cfgv = "nvim ${nixPath}/home-manager/programs/modules/neovim/default.nix";
 
         gcpall = "cp -r ${externalDiskPath}/4_programming/git/templates/. ./";
 
