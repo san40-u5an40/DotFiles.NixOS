@@ -12,6 +12,7 @@
       let
         nixPath = profileInfo.nixPath;
         externalDiskPath = profileInfo.externalDiskPath;
+        homePath = profileInfo.homePath;
 
         dotNetVersion = "10.0";
 
@@ -33,6 +34,7 @@
         cdnixhm = "cd ${nixPath}/home-manager";
         cdnixos = "cd ${nixPath}/nixOs";
         cdp = "cd ${externalDiskPath}/4_programming";
+        cda = "cd ${homePath}/MyApplications";
         cded = "cd ${externalDiskPath}";
         cddnp = "cd bin/Release/net${dotNetVersion}/linux-x64/publish";
 
