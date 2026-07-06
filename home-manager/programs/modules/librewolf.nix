@@ -44,7 +44,6 @@
       DisableTelemetry = true;
       DisplayBookmarksToolbar = "newtab";
       DontCheckDefaultBrowser = true;
-      DownloadDirectory = "/home/${profileInfo.user}/Downloads";
       EnableTrackingProtection = {
         Value = true;
         Locked = true;

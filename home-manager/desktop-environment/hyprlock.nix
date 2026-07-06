@@ -1,3 +1,4 @@
+{ profileInfo, ... }:
 {
   programs.hyprlock = {
     enable = true;
@@ -5,7 +6,7 @@
       {
         background = {
           monitor = "eDP-1";
-          path = "~/.config/nix/home-manager/desktop-environment/pics/walls/wallhaven_76yqy9.jpg";
+          path = "${profileInfo.nixPath}/home-manager/desktop-environment/pics/walls/wallhaven_76yqy9.jpg";
           contrast = 0.8916;
           brightness = 0.8916;
           vibrancy = 0.8916;
@@ -30,7 +31,7 @@
 
         image = {
           monitor = "eDP-1";
-          path = "~/.config/nix/home-manager/desktop-environment/pics/avatar.jpg";
+          path = "${profileInfo.nixPath}/home-manager/desktop-environment/pics/avatar.jpg";
           border_size = 2;
           border_color = "rgba (34, 84, 150, 0.71)";
           size = 150;

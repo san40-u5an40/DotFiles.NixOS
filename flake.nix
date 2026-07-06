@@ -32,9 +32,12 @@
       system = "x86_64-linux";
       user = "san40-u5an40";
       hostName = "${user}-nixos";
+      homePath = "/home/${user}";
+      externalDiskPath = "${homePath}/ExternalDisk";
+      nixPath = "${homePath}/.config/nix";
       stateVersion = "26.05";
       historyLength = 30000;
-      profileInfo = { inherit system historyLength user hostName stateVersion; };
+      profileInfo = { inherit system user hostName homePath externalDiskPath nixPath stateVersion historyLength; };
 
       config = {
         allowUnfree = true;

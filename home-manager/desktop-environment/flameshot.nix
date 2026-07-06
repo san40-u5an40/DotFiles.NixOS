@@ -7,7 +7,7 @@
         showStartupLaunchMessage = false;
         showDesktopNotification = true;
         showAbortNotification = false;
-        savePath = "/home/${profileInfo.user}/Screenshots";
+        savePath = "${profileInfo.externalDiskPath}/3_photos_videos/screenshots";
         saveAsFileExtension = "jpg";
         useGrimAdapter = true;
         disabledGrimWarning = true;

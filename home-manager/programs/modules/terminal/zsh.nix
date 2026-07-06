@@ -10,8 +10,8 @@
 
     shellAliases =
       let
-        nixPath = "~/.config/nix";
-        externalDiskPath = "~/ExternalDisk";
+        nixPath = profileInfo.nixPath;
+        externalDiskPath = profileInfo.externalDiskPath;
 
         dotNetVersion = "10.0";
 

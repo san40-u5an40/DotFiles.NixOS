@@ -188,7 +188,7 @@
         ];
       };
       general = {
-        avatarImage = "/home/${profileInfo.user}/.config/nix/home-manager/desktop-environment/pics/avatar.jpg";
+        avatarImage = "${profileInfo.nixPath}/home-manager/desktop-environment/pics/avatar.jpg";
         dimmerOpacity = 0.29;
         showScreenCorners = true;
         forceBlackScreenCorners = true;
@@ -302,7 +302,7 @@
       wallpaper = {
         enabled = true;
         overviewEnabled = false;
-        directory = "/home/${profileInfo.user}/.config/nix/home-manager/desktop-environment/pics/walls";
+        directory = "${profileInfo.nixPath}/home-manager/desktop-environment/pics/walls";
         monitorDirectories = [ ];
         enableMultiMonitorDirectories = false;
         showHiddenFiles = false;

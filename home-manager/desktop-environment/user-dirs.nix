@@ -1,10 +1,12 @@
-{ config, ... }:
+{ profileInfo, ... }:
 let
-  home = config.home.homeDirectory;
+  homePath = profileInfo.homePath;
+  externalDiskPath = profileInfo.externalDiskPath;
+  myAppsPath = "${homePath}/MyApplications";
 in
 {
   home.sessionPath = [
-    "${home}/MyApllications"
+    myAppsPath
   ];
   xdg = {
     enable = true;
@@ -20,13 +22,12 @@ in
       documents = null;
       publicShare = null;
       projects = null;
-      download = "${home}/Downloads";
+      download = "${externalDiskPath}/1_downloads";
 
       extraConfig = {
-        XDG_SCREENSHOTS_DIR = "${home}/Screenshots";
-        XDG_MY_APPLICATION_DIR = "${home}/MyApllications";
-        XDG_EXTERNAL_DISK_DIR = "${home}/ExternalDisk";
-        XDG_BACK_UP_DIR = "${home}/.BackUp";
+        XDG_BACK_UP_DIR = "${homePath}/.BackUp";
+        XDG_MY_APPLICATION_DIR = myAppsPath;
+        XDG_EXTERNAL_DISK_DIR = externalDiskPath;
       };
     };
   };
