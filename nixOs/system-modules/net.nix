@@ -13,8 +13,8 @@
       dns = "none";
     };
     firewall = {
-      allowedTCPPorts = [];
-      allowedUDPPorts = [];
+      allowedTCPPorts = [ 22000 ];
+      allowedUDPPorts = [ 22000 21027 ];
     };
   };
 }
