@@ -8,9 +8,9 @@ hl.bind(mod .. "Q", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mod .. "R", hl.dsp.exec_cmd("hyprctl reload"))
 
 -- Programs
-hl.bind(mod .. "Return", hl.dsp.exec_cmd("alacritty"))
-hl.bind(mod .. "P", hl.dsp.exec_cmd("hyprpicker -a -f hex"))
-hl.bind(mod .. "I", hl.dsp.exec_cmd("flameshot gui"))
+hl.bind(mod .. "Return", hl.dsp.exec_cmd("uwsm app -- alacritty"))
+hl.bind(mod .. "P", hl.dsp.exec_cmd("uwsm app -- hyprpicker -a -f hex"))
+hl.bind(mod .. "I", hl.dsp.exec_cmd("uwsm app -- flameshot gui"))
 hl.bind(mod .. "M", hl.dsp.exec_cmd(noctalia .. "launcher toggle"))
 hl.bind(mod .. "E", hl.dsp.exec_cmd(noctalia .. "launcher emoji"))
 
