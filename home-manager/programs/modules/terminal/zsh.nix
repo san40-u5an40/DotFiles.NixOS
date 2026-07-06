@@ -46,6 +46,7 @@
         dnp = "dotnet publish -r linux-x64 -c Release";
         dnnc = "dotnet nuget locals all --clear";
         dnnp = "dotnet pack --configuration Release --include-symbols --verbosity normal";
+        dntr = "dotnet vstest bin/Release/net${dotNetVersion}/\${PWD##*/}.dll";
 
         vm = "veracrypt -t -k ${vcKeyFile} ${vcDataFile} ${vcMountPath} --fs-options=\"iocharset=utf8\" --protect-hidden=no --pim=0";
         vd = "veracrypt -t -d";
