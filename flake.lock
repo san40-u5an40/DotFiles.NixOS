@@ -181,6 +181,22 @@
         "type": "github"
       }
     },
+    "happ": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1782859482,
+        "narHash": "sha256-Mmc7E3qFgCpVRWocs9yFlpSdRK/c5XPENJ51E+f+pac=",
+        "owner": "MrShitFox",
+        "repo": "happ-nixos",
+        "rev": "42fbaedab18654a237c11104ec4fd1de4810f63f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MrShitFox",
+        "repo": "happ-nixos",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -366,6 +382,7 @@
     "root": {
       "inputs": {
         "cursor": "cursor",
+        "happ": "happ",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",

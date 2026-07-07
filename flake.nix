@@ -24,10 +24,14 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    happ = {
+      url = "github:MrShitFox/happ-nixos";
+      flake = false;
+    };
     zapret.url = "github:kartavkun/zapret-discord-youtube";
   };
 
-  outputs = { nixpkgs, nixpkgs-unstable, home-manager, cursor, noctalia, stylix, nur, zapret, ... }:
+  outputs = { nixpkgs, nixpkgs-unstable, home-manager, cursor, noctalia, stylix, nur, zapret, happ, ... }:
     let
       system = "x86_64-linux";
       user = "san40-u5an40";
@@ -60,6 +64,7 @@
         modules = [
           ./nixOs/configuration.nix
           zapret.nixosModules.default
+          (import "${happ}/happ-module.nix")
         ];
       };
 
