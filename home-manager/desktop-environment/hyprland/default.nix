@@ -7,6 +7,7 @@
       require('binds')
       require('environment')
       require('events')
+      require('gestures')
       require('monitor')
       require('variables')
       require('window-rules')
