@@ -14,19 +14,38 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/f6b83e7a-bf11-493f-8458-fde0b5a11b26";
+    { device = "/dev/mapper/crypted";
       fsType = "btrfs";
+      options = [ "subvol=root" ];
+    };
+
+  boot.initrd.luks.devices."crypted".device = "/dev/disk/by-uuid/b5d518a3-ebcd-4583-bb5c-b1b81adf1d3b";
+
+  fileSystems."/.swapvol" =
+    { device = "/dev/mapper/crypted";
+      fsType = "btrfs";
+      options = [ "subvol=swap" ];
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/782A-4620";
+    { device = "/dev/disk/by-uuid/BE01-C7C7";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  swapDevices =
-    [ { device = "/dev/disk/by-uuid/1c6d36fc-0285-4778-b20b-c366206c8db0"; }
-    ];
+  fileSystems."/home" =
+    { device = "/dev/mapper/crypted";
+      fsType = "btrfs";
+      options = [ "subvol=home" ];
+    };
+
+  fileSystems."/nix" =
+    { device = "/dev/mapper/crypted";
+      fsType = "btrfs";
+      options = [ "subvol=nix" ];
+    };
+
+  swapDevices = [ ];
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;

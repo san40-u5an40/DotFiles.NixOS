@@ -2,9 +2,9 @@
 {
   imports =
     [
+      ./hardware-configuration.nix
       ./programs-modules
       ./system-modules
-      ./hardware-configuration.nix
     ];
 
   environment.systemPackages = [ pkgs.home-manager ];
