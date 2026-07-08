@@ -9,7 +9,7 @@
     simple-scan
     rawtherapee
     gimp
-    #davinci-resolve
+    davinci-resolve
     inkscape
     lmstudio
     mpv
