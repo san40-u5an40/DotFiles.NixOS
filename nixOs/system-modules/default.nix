@@ -3,6 +3,7 @@
     ./bluetooth.nix
     ./boot.nix
     ./graphics.nix
+    ./handle-lid-switch.nix
     ./locale.nix
     ./media.nix
     ./net.nix
