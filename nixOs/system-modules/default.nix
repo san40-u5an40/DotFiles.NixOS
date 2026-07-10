@@ -9,6 +9,7 @@
     ./net.nix
     ./nix.nix
     ./printing.nix
+    ./secret-service.nix
     ./ssh.nix
     ./timezone.nix
     ./tuned.nix
