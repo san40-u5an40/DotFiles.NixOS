@@ -7,6 +7,7 @@
       enable = true;
       defaultApplications = {
         "application/sql" = [ "mysql-workbench.desktop" ];
+        "application/pdf" = [ "org.kde.okular.desktop" ];
         "application/vnd.mysql-workbench-model" = [ "mysql-workbench.desktop" ];
         "x-scheme-handler/steam" = [ "steam.desktop" ];
         "x-scheme-handler/steamlink" = [ "steam.desktop" ];
