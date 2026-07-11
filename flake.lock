@@ -272,22 +272,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1782723713,
-        "narHash": "sha256-oPXCU/SSUokcGaJREHibG1CBX3+s/W7orDWQOZDsEeQ=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "b5aa0fbd538984f6e3d201be0005b4463d8b09f8",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "noctalia": {
       "inputs": {
         "nixpkgs": [
@@ -388,8 +372,7 @@
         "nixpkgs-unstable": "nixpkgs-unstable",
         "noctalia": "noctalia",
         "nur": "nur",
-        "stylix": "stylix",
-        "zapret": "zapret"
+        "stylix": "stylix"
       }
     },
     "stylix": {
@@ -587,41 +570,6 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "zapret": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_2",
-        "zapret-flowseal": "zapret-flowseal"
-      },
-      "locked": {
-        "lastModified": 1782857350,
-        "narHash": "sha256-DawxU1MnUABegNl/GJTqjU1fkEFkmKkXWVnMyx9F/r4=",
-        "owner": "kartavkun",
-        "repo": "zapret-discord-youtube",
-        "rev": "d001115030bf2045965ce7ea68795dfe810597e6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kartavkun",
-        "repo": "zapret-discord-youtube",
-        "type": "github"
-      }
-    },
-    "zapret-flowseal": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1782828679,
-        "narHash": "sha256-uX0ftK9XNefS8NAyqyJrL0omWbOYLi+zqc6OggUVdHg=",
-        "owner": "Flowseal",
-        "repo": "zapret-discord-youtube",
-        "rev": "36f4452342fd226765ca0c05c684e2a999193c7f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Flowseal",
-        "repo": "zapret-discord-youtube",
         "type": "github"
       }
     }
