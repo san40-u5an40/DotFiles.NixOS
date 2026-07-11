@@ -43,6 +43,7 @@
           #program = "${pkgs.zsh}/bin/zsh";
           #args = [ "-l" ];
           program = "${pkgs.tmux}/bin/tmux";
+          args = [ "-u" ];
         };
       };
 
