@@ -1,12 +1,9 @@
 {
   xdg = {
-    configFile."mimeapps.list".force = true;
-    dataFile."applications/mimeapps.list".force = true;
-
     mimeApps = {
       enable = true;
       defaultApplications = {
-        "application/sql" = [ "mysql-workbench.desktop" ];
+        "inode/directory" = [ "yazi.desktop" ];
         "application/pdf" = [ "okularApplication_pdf.desktop" ];
         "application/vnd.mysql-workbench-model" = [ "mysql-workbench.desktop" ];
         "x-scheme-handler/steam" = [ "steam.desktop" ];
