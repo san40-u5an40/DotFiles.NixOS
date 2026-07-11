@@ -29,6 +29,7 @@
         ll = "eza --tree --icons=always --no-time --no-user --no-permissions";
         v = "nvim";
         f = "fastfetch";
+        mksc = "mkdir ${externalDiskPath}/3_photos_videos/screenshots";
 
         cdnix = "cd ${nixPath}";
         cdnixhm = "cd ${nixPath}/home-manager";
