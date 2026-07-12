@@ -2,6 +2,7 @@
   imports = [
     ./bluetooth.nix
     ./boot.nix
+    ./certificates.nix
     ./graphics.nix
     ./handle-lid-switch.nix
     ./locale.nix
