@@ -5,6 +5,7 @@
     onlyoffice-desktopeditors
     kdePackages.okular
     kdePackages.gwenview
+    kdePackages.filelight
     bruno
     simple-scan
     rawtherapee
@@ -17,9 +18,10 @@
     obs-studio
     obsidian
     telegram-desktop
-    vesktop
+    discord
     veracrypt
     keepass
+    mitmproxy
 
     # CLI utils
     ueberzugpp
