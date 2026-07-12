@@ -15,7 +15,6 @@
     lmstudio
     mpv
     tauon
-    obs-studio
     obsidian
     telegram-desktop
     discord

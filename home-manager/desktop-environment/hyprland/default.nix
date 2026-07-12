@@ -26,7 +26,6 @@
     qt6.qtwayland
     wl-clipboard
     hyprpicker
-    hyprpwcenter
-    wireplumber
+    pwvucontrol
   ];
 }

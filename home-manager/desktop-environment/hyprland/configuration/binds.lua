@@ -13,6 +13,8 @@ hl.bind(mod .. "P", hl.dsp.exec_cmd("uwsm app -- hyprpicker -a -f hex"))
 hl.bind(mod .. "I", hl.dsp.exec_cmd("uwsm app -- flameshot gui"))
 hl.bind(mod .. "M", hl.dsp.exec_cmd(noctalia .. "launcher toggle"))
 hl.bind(mod .. "E", hl.dsp.exec_cmd(noctalia .. "launcher emoji"))
+hl.bind(mod .. "O", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
+hl.bind(mod .. "U", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
 
 -- Noctalia control
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(noctalia .. "volume increase"), { repeating = true, locked = true })

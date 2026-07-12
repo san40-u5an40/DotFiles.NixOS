@@ -47,6 +47,15 @@ hl.window_rule({
 
 hl.window_rule({
   match = {
+    title = "Проектор - Мультипросмотр",
+  },
+  float = true,
+  no_blur = true,
+  opacity = "1.0",
+})
+
+hl.window_rule({
+  match = {
     class = "Alacritty";
   },
   workspace = "1",
