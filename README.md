@@ -13,6 +13,7 @@
 |Терминал|Alacritty -> Tmux -> Zsh|
 |Офис|OnlyOffice|
 |Браузер|LibreWolf|
+|VPN|Happ|
 |Редакторы кода|LSP Servers(nil, lua-ls, roslyn-ls) -> NeoVim / VSCode-fhs|
-|Дополнительно|Discord и YouTube работают поверх Zapret, есть Steam, MySQL, Syncthing, Git, Flameshot и мн.др.|
+|Дополнительно|Есть Steam, MySQL, Syncthing, Git, Flameshot и мн.др.|
 
