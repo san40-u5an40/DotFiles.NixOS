@@ -6,6 +6,7 @@ local noctalia = "noctalia-shell ipc call "
 hl.bind(mod .. "SHIFT + Q", hl.dsp.exec_cmd("systemctl poweroff"))
 hl.bind(mod .. "Q", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mod .. "R", hl.dsp.exec_cmd("hyprctl reload"))
+hl.bind(mod .. "Escape", hl.dsp.exec_cmd("systemctl suspend"))
 
 -- Programs
 hl.bind(mod .. "Return", hl.dsp.exec_cmd("uwsm app -- alacritty"))
